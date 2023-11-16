@@ -279,16 +279,28 @@ body {
   transform: translate(-50%, -50%);
   width: 400px;
   height: 400px;
-  background: cyan;
+  background: grey;
   border-radius: 50%;
 }
 
 
 #intro a {
   font-size: 4em;
-  font-weight: 600;
+  font-weight: bold;
   text-decoration: none;
-  color: gold;
+  color: transparent;
+  letter-spacing:5px;
+     background-image: linear-gradient(
+	to right,
+	#462523 0,
+    #cb9b51 22%, 
+	#f6e27a 45%,
+	#f6f2c0 50%,
+	#f6e27a 55%,
+	#cb9b51 78%,
+	#462523 100%
+	);
+  -webkit-background-clip:text;
   font-family: "Sofia", sans-serif;
   position: absolute;
   top: 50%;
