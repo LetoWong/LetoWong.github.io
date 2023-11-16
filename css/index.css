@@ -238,7 +238,8 @@ body {
   border: 3px solid black;
   border-radius: 10px;
   width: 500px;
-  margin-top: 50px;
+  margin: auto;
+  margin-top: 90px;
 }
 
 
@@ -270,6 +271,27 @@ body {
 }
 
 /*---entrance---*/
+
+#intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background: cyan;
+  border-radius: 50%;
+}
+
+
 #intro a {
-  margin: auto;
+  font-size: 4em;
+  font-weight: 600;
+  text-decoration: none;
+  color: gold;
+  font-family: "Sofia", sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
