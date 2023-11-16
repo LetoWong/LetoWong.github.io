@@ -1,0 +1,275 @@
+@import url(https://fonts.googleapis.com/css?family=Sofia);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: white;
+}
+
+#p11 {
+  position: absolute;
+  color: blue;
+}
+
+#tpic {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+#tpic img {
+  height: 200px;
+}
+
+
+
+.topnav {
+  position: relative;
+  width: 100%;
+  min-height: 66px;
+  /*background: black;*/
+  background-image: linear-gradient(to bottom right, grey, black);
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid gold;
+  border-radius: 10px;
+
+}
+
+.topnav .logo{
+  color: #fff;
+  font-size: 1.75em;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: "Sofia", sans-serif;
+}
+
+.topnav ul {
+  position: relative;
+}
+
+.topnav ul li{
+  position: relative;
+  list-style: none;
+  float: left;
+}
+
+.topnav ul li a
+{
+  color: #fff;
+  font-size: 1.1em;
+  padding: 20px 25px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Sofia", sans-serif;
+}
+
+.topnav ul li a:hover {
+  background: #2b93e3;
+}
+
+
+/*make the nav responsive*/
+@media (max-width: 550px) {
+  .topnav{
+    padding: 10px 20px;
+  }
+  .topnav nav {
+    position: absolute;
+    width: 100%;
+    top: 66px;
+    left: 0;
+    background: #445964;
+    display: none;
+  }
+  /*control the nav showup*/
+  .topnav.active nav {
+    display: initial;
+  }
+  .topnav nav ul li {
+    width: 100%;
+  }
+  .menuToggle {
+    position: relative;
+    width: 40px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menuToggle::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transform: translateY(-12px);
+    box-shadow: 0 12px #fff;
+  }
+  .menuToggle::after {
+    content: '';
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transform: translateY(12px);
+  }
+  .topnav.active .menuToggle::before {
+    transform: rotate(45deg);
+    box-shadow: 0 0 #fff;
+  }
+  .topnav.active .menuToggle::after {
+    transform: rotate(315deg);
+    box-shadow: 0 0 #fff;
+  }
+}
+
+
+
+/*body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #16384c;
+}*/
+.container
+{
+  position: relative;
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.container .card
+{
+  position: relative;
+  /*max-width: 300px;*/
+  width: 500px;
+  height: 215px;
+  background: #fff;
+  margin: 50px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+  transition: 0.3s ease-in-out;
+}
+.container .card:hover
+{
+  height: 420px;
+}
+.container .card .imgBx
+{
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 20px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.container .card .imgBx img
+{
+  max-width: 70%;
+  border-radius: 4px;
+}
+.container .card .content
+{
+  position: relative;
+  margin-top: -150px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.container .card:hover .content
+{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
+
+/*----index wnews----*/
+
+#wnews {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 15px;
+  box-shadow: 5px 5px 5px #888888;
+  width: 100%;
+  height: auto;
+  font-size: 20px;
+  -webkit-column-count: 2;
+}
+
+/*----musicconcert mnews----*/
+
+#mnews {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 15px;
+  box-shadow: 5px 5px 5px #888888;
+  width: 100%;
+  height: auto;
+  font-size: 20px;
+  -webkit-column-count: 2;
+}
+
+/*---contact---*/
+
+#form {
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 500px;
+  margin-top: 50px;
+}
+
+
+/*---shop---*/
+
+.shopcontainer
+{
+  position: relative;
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.shopcontainer .card
+{
+  position: relative;
+  width: 500px;
+  height: 400px;
+  background: #fff;
+  margin: 50px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+  transition: 0.3s ease-in-out;
+}
+
+/*---entrance---*/
+#intro a {
+  margin: auto;
+}

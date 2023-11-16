@@ -1,0 +1,102 @@
+<!Doctype html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Web Page</title>
+    <link rel="stylesheet" href="css\index.css" />
+  </head>
+
+  <body>
+    
+    <div id="tpic">
+      <img src="#" alt="intro">
+    </div>
+
+    <div class="topnav">
+      <a href="#" class="logo">Main</a>
+      <div class="menuToggle"></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">What's News</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="main.html">Main</a></li>
+          <li><a href="musicconcert.html">Music Concert</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <div class="imgBx">
+          <img src="https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQ2NVXMhclyDK5JK8hY2ah0ftc6Fj8SgHQ-hIVAUCBAaMg7893gGU_YOi_b4k6Z1wU1">
+        </div>
+        <div class="content">
+          <h2>Test 1</h2>
+          <p>This is Test 1</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgBx">
+          <img src="https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTQYhcNsxy7UkRJs5OSaoZc1J1cX7LExFi4Lo95RvZQPisQPDCoEYlcy6CQ6Im16ksF">
+        </div>
+        <div class="content">
+          <h2>Test 2</h2>
+          <p>This is Test 2</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgBx">
+          <img src="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcQGUaBHRHz5gTS2Ia9HR1lG5mX9jRQ9ZoEfIQe3ALmmeFZ4dwGSibfzYKs1HYvYpbpz">
+        </div>
+        <div class="content">
+          <h2>Test 3</h2>
+          <p>This is Test 3</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgBx">
+          <img src="https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcSqp_t-VTyZCDuPhU43TcMyuklxqOkq0aiNHeRkneE8myQD2YQ652lJiSBGXu00l6uG">
+        </div>
+        <div class="content">
+          <h2>Test 4</h2>
+          <p>This is Test 4</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgBx">
+          <img src="https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcRyxx7iR_ajA4u__CAk1Tu__dG__gXlKNDkWBO5qlYsoJS9REEaG0Eysl1bRNpYYpBY">
+        </div>
+        <div class="content">
+          <h2>Test 5</h2>
+          <p>This is Test 5</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="imgBx">
+          <img src="https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTHVctMGjYBUZyG58nDkk_uZk_lfhwBBTfRMBGqDTaSwrxDtO1RYrYVOeBEim2SZWnk">
+        </div>
+        <div class="content">
+          <h2>Test 6</h2>
+          <p>This is Test 6</p>
+          <iframe width="188" height="105" src="https://www.youtube.com/embed/DtKCNJmARF0?si=GaAABwo9m_lEs_LA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let menuToggle = document.querySelector('.menuToggle');
+      let header = document.querySelector('div.topnav')
+      menuToggle.onclick = function(){
+        header.classList.toggle('active');
+      }
+
+      function welcome() {
+        var nameInput = window.prompt("Hello, What's your name?", "Guest");
+        var message = nameInput + " Welcome!!";
+        welcomeMsg.innerHTML = message;
+      }
+    </script>
+  </body>
+
+</html>

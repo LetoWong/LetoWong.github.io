@@ -1,0 +1,78 @@
+<!Doctype html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Web Page</title>
+    <link rel="stylesheet" href="css\index.css" />
+  </head>
+
+  <body>
+    
+    <div id="tpic">
+      <img src="#" alt="intro">
+    </div>
+
+    <div class="topnav">
+      <a href="#" class="logo">Shop</a>
+      <div class="menuToggle"></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">What's News</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="main.html">Main</a></li>
+          <li><a href="musicconcert.html">Music Concert</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="shopcontainer">
+      <div class="card">
+        <div class="content">
+          <h2>item One</h2>
+          <p>This is item One</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2>item two</h2>
+          <p>This is item two</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2>item three</h2>
+          <p>This is item three</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2>item four</h2>
+          <p>This is item four</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2>item five</h2>
+          <p>This is item five</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h2>item six</h2>
+          <p>This is item six</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let menuToggle = document.querySelector('.menuToggle');
+      let header = document.querySelector('div.topnav')
+      menuToggle.onclick = function(){
+        header.classList.toggle('active');
+      }
+
+    </script>
+  </body>
+
+</html>

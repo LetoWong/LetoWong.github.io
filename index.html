@@ -1,0 +1,55 @@
+<!Doctype html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Web Page</title>
+    <link rel="stylesheet" href="css\index.css" />
+  </head>
+
+  <body onload="welcome()">
+    
+    <div id="tpic">
+      <img src="#" alt="intro">
+    </div>
+
+    <div class="topnav">
+      <a href="#" class="logo">What's News</a>
+      <div class="menuToggle"></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">What's News</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="main.html">Main</a></li>
+          <li><a href="musicconcert.html">Music Concert</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="index">
+      <p><h1 id="welcomeMsg"></h1></p>
+    </div>
+
+    <div id="wcontainer">
+      <div id="wnews">
+        <h2>About Hong Kong Tourism Board</h2>
+        The Hong Kong Tourism Board (HKTB) is a government-subvented body tasked to market and promote Hong Kong as a travel destination worldwide and to enhance visitors' experience once they arrive. You can find out more about our organisation, its structure, management and more, here. Stay in touch with all that is happening in Hong Kong and get great local insights by following us on social media, meeting the people who call the city home and, maybe, even by being our guests.
+      </div>
+    </div>
+
+    <script>
+      let menuToggle = document.querySelector('.menuToggle');
+      let header = document.querySelector('div.topnav')
+      menuToggle.onclick = function(){
+        header.classList.toggle('active');
+      }
+
+      function welcome() {
+        var nameInput = window.prompt("Hello, What's your name?", "Guest");
+        var message = nameInput + " Welcome!!";
+        welcomeMsg.innerHTML = message;
+      }
+    </script>
+  </body>
+
+</html>

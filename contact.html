@@ -1,0 +1,93 @@
+<!Doctype html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Web Page</title>
+    <link rel="stylesheet" href="css\index.css" />
+  </head>
+
+  <body>
+    
+    <div id="tpic">
+      <img src="#" alt="intro">
+    </div>
+
+    <div class="topnav">
+      <a href="#" class="logo">Contact</a>
+      <div class="menuToggle"></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">What's News</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="main.html">Main</a></li>
+          <li><a href="musicconcert.html">Music Concert</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="cform">
+    <div id="form" >
+      <div class="h-tag">
+      <h2>Contact Us</h2>
+      </div>
+      <!-- create account div -->
+      <form action="#">
+      <div id="contactus">
+      <table cellspacing="5" align="center" cellpadding="8" border="0">
+      <tr>
+      <td align="left">Name :</td>
+      <td><input type="text" placeholder="Enter user here" id="t1" class="tb" /></td>
+      </tr>
+      <tr>
+      <td align="left">Gender :</td>
+      <td><input type="radio" name="gender"/>Male<input type="radio" name="gender"/>Female </td>
+      </tr>
+      <tr>
+      <td align="left">Email Adress* :</td>
+      <td><input type="text" placeholder="Enter Email ID here" id="t2" class="tb" required="required"/></td>
+      </tr>
+      <tr>
+      <td align="left">Birthday:</td>
+      <td><input type="date"class="tb"/></td>
+      </tr>
+      <tr>
+      <td align="left">Username* :</td>
+      <td><input type="text" placeholder="Enter Username here" id="t3" class="tb" required="required"/></td>
+      </tr>
+      <tr>
+      <td align="left">Password* :</td>
+      <td><input type="password" placeholder="Enter Password here" id="t4" class="tb" required="required"/></td>
+      </tr>
+      <tr>
+      <td align="left">Confirm Password* :</td>
+      <td><input type="password" placeholder="Enter Password here" id="t5" class="tb" required="required"/></td>
+      </tr>
+      <tr>
+      <td></td>
+      <td>
+      <input type="reset" value="Clear Form" onclick="clearFunc()" id="res" class="btn" />
+      <input type="submit" value="Create Account" class="btn" onclick="registration()" /></td>
+      </tr>
+      </table>
+      </div>
+      </form>
+    </div>
+    </div>
+
+    <script>
+      let menuToggle = document.querySelector('.menuToggle');
+      let header = document.querySelector('div.topnav')
+      menuToggle.onclick = function(){
+        header.classList.toggle('active');
+      }
+
+      function welcome() {
+        var nameInput = window.prompt("Hello, What's your name?", "Guest");
+        var message = nameInput + " Welcome!!";
+        welcomeMsg.innerHTML = message;
+      }
+    </script>
+  </body>
+
+</html>
