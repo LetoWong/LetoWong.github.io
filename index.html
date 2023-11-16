@@ -32,7 +32,7 @@
 
     <div id="wcontainer">
       <div id="wnews">
-        <h2>About Hong Kong Tourism Board</h2>
+      	<p><h2 id="welcomeMsg"></h2></p>
         The Hong Kong Tourism Board (HKTB) is a government-subvented body tasked to market and promote Hong Kong as a travel destination worldwide and to enhance visitors' experience once they arrive. You can find out more about our organisation, its structure, management and more, here. Stay in touch with all that is happening in Hong Kong and get great local insights by following us on social media, meeting the people who call the city home and, maybe, even by being our guests.
       </div>
     </div>
@@ -46,7 +46,7 @@
 
       function welcome() {
         var nameInput = window.prompt("Hello, What's your name?", "Guest");
-        var message = nameInput + " Welcome!!";
+        var message = "Welcome to our website, " + nameInput;
         welcomeMsg.innerHTML = message;
       }
     </script>
