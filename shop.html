@@ -2,14 +2,15 @@
 
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Web Page</title>
+    <title>Shop</title>
     <link rel="stylesheet" href="css\index.css" />
   </head>
 
   <body>
     
-    <div id="tpic">
-      <img src="#" alt="intro">
+    <div id="banner">
+      <img src="img\banner.jpg" alt="banner">
+      <p>Classical Online</p>
     </div>
 
     <div class="topnav">
@@ -20,8 +21,8 @@
           <li><a href="index.html">What's News</a></li>
           <li><a href="shop.html">Shop</a></li>
           <li><a href="main.html">Main</a></li>
-          <li><a href="musicconcert.html">Music Concert</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="musicconcert.html">Events</a></li>
+          <li><a href="contact.html">Join us</a></li>
         </ul>
       </nav>
     </div>
@@ -29,40 +30,86 @@
     <div class="shopcontainer">
       <div class="card">
         <div class="content">
-          <h2>item One</h2>
-          <p>This is item One</p>
+          <img class="shopimg" src="img\violin.jpg" width="100px"><br><br>
+          <div class="content2">
+          <h2>Violin</h2>
+          <form oninput="x.value=parseInt(a.value)*parseInt(b.value)">HK$10000<br>
+            <input type="hidden" id="a" value="10000" >Numbers:
+            <input type="number" id="b" value="0" min="0" max="50"><br>
+            <p>Total: HK$<output name="x" for="a b"></output></p>
+          </form>
+          </div>
         </div>
       </div>
       <div class="card">
         <div class="content">
-          <h2>item two</h2>
-          <p>This is item two</p>
+          <img class="shopimg" src="img\cello.jpg" width="100px"><br><br>
+          <div class="content2">
+          <h2>Cello</h2>
+          <form oninput="x.value=parseInt(a.value)*parseInt(b.value)">HK$20000<br>
+            <input type="hidden" id="a" value="20000" >Numbers:
+            <input type="number" id="b" value="0" min="0" max="50"><br>
+            <p>Total: HK$<output name="x" for="a b"></output></p>
+          </form>
+          </div>
         </div>
       </div>
       <div class="card">
         <div class="content">
-          <h2>item three</h2>
-          <p>This is item three</p>
+          <img class="shopimg" src="img\piano.jpg" width="200px"><br><br>
+          <div class="content2">
+          <h2>Piano</h2>
+          <form oninput="x.value=parseInt(a.value)*parseInt(b.value)">HK$100000<br>
+            <input type="hidden" id="a" value="100000" >Numbers:
+            <input type="number" id="b" value="0" min="0" max="50"><br>
+            <p>Total: HK$<output name="x" for="a b"></output></p>
+          </form>
+          </div>
         </div>
       </div>
       <div class="card">
         <div class="content">
-          <h2>item four</h2>
-          <p>This is item four</p>
+          <img class="shopimg" src="img\oboe.jpg" width="200px"><br><br>
+          <div class="content2">
+          <h2>Oboe</h2>
+          <form oninput="x.value=parseInt(a.value)*parseInt(b.value)">HK$70000<br>
+            <input type="hidden" id="a" value="70000" >Numbers:
+            <input type="number" id="b" value="0" min="0" max="50"><br>
+            <p>Total: HK$<output name="x" for="a b"></output></p>
+          </form>
+          </div>
         </div>
       </div>
       <div class="card">
         <div class="content">
-          <h2>item five</h2>
-          <p>This is item five</p>
+          <img class="shopimg" src="img\trombone.jpg" width="250px"><br><br>
+          <div class="content2">
+          <h2>Trombone</h2>
+          <form oninput="x.value=parseInt(a.value)*parseInt(b.value)">HK$6000<br>
+            <input type="hidden" id="a" value="6000" >Numbers:
+            <input type="number" id="b" value="0" min="0" max="50"><br>
+            <p>Total: HK$<output name="x" for="a b"></output></p>
+          </form>
+          </div>
         </div>
       </div>
       <div class="card">
         <div class="content">
-          <h2>item six</h2>
-          <p>This is item six</p>
+          <img class="shopimg" src="img\trumpet.jpg" width="250px"><br><br>
+          <div class="content2">
+          <h2>Trumpet</h2>
+          <form oninput="x.value=parseInt(a.value)*parseInt(b.value)">HK$5000<br>
+            <input type="hidden" id="a" value="5000" >Numbers:
+            <input type="number" id="b" value="0" min="0" max="50"><br>
+            <p>Total: HK$<output name="x" for="a b"></output></p>
+          </form>
+          </div>
         </div>
       </div>
+    </div>
+
+    <div class="footer">
+      <h2><i><b>Copyright 2023 © ChenMingChoi & WongHoLung</b></i></h2>
     </div>
 
     <script>

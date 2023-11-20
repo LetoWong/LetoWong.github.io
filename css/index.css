@@ -8,38 +8,57 @@
 }
 
 body {
-  min-height: 100vh;
-  background: white;
+  height: 100%;
+  background-image: url('../img/top2.jpeg');
+  background-repeat: repeat;
 }
 
-#p11 {
-  position: absolute;
-  color: blue;
+#entranceimg {
+  position: fixed;
+  width: 100%;
 }
 
-#tpic {
+#banner{
   width: 100%;
   height: 100px;
+  overflow: hidden;
+}
+#banner img{
+  width: 100%;
+}
+#banner p{
+  font-family: "Sofia", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  color: firebrick;
+  letter-spacing: 10px;
+}
+
+.footer {
+  margin-top: 50px;
+  padding: 20px;
   text-align: center;
+  background-image: linear-gradient(#88564e, #492019);
+  color: white;
+  position: relative;
+  width: 100%;
+  bottom: 0px;
 }
-
-#tpic img {
-  height: 200px;
-}
-
-
 
 .topnav {
   position: relative;
   width: 100%;
   min-height: 66px;
-  /*background: black;*/
-  background-image: linear-gradient(to bottom right, grey, black);
+  background-image: linear-gradient(#88564e, #492019);
   padding: 0 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 3px solid gold;
+  border: 3px solid goldenrod;
   border-radius: 10px;
 
 }
@@ -79,7 +98,7 @@ body {
 
 
 /*make the nav responsive*/
-@media (max-width: 550px) {
+@media (max-width: 650px) {
   .topnav{
     padding: 10px 20px;
   }
@@ -135,14 +154,8 @@ body {
 }
 
 
+/*---main---*/
 
-/*body
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #16384c;
-}*/
 .container
 {
   position: relative;
@@ -153,13 +166,34 @@ body {
   flex-wrap: wrap;
   padding: 30px;
 }
+.container .ctitle
+{
+  position: relative;
+  font-size: 35px;
+  font-weight: bold;
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  border: 3px solid goldenrod;
+  border-radius: 10px;
+  background-image: linear-gradient(#88564e, brown);
+}
+.cwordtitle
+{
+  font-family: "Sofia", sans-serif;
+  color: goldenrod;
+}
+.cword
+{
+  font-family: "Sofia", sans-serif;
+  color: #4c221b;
+}
 .container .card
 {
   position: relative;
-  /*max-width: 300px;*/
-  width: 500px;
+  max-width: 500px;
   height: 215px;
-  background: #fff;
+  background: #f2ecde;
   margin: 50px 10px;
   padding: 20px 15px;
   display: flex;
@@ -169,21 +203,38 @@ body {
 }
 .container .card:hover
 {
-  height: 420px;
+  height: 720px;
 }
 .container .card .imgBx
 {
   position: relative;
-  width: 260px;
-  height: 260px;
+  width: 500px;
+  height: 250px;
   top: -60px;
   left: 20px;
   z-index: 1;
   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  background-color: brown;
+}
+.container .card .imgBx div
+{
+  position: relative;
+  width: 250px;
+  height: 250px;
+  left: 250px;
+  top: -250px;
+  text-align: center;
+  padding: 80px 0px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Sofia", sans-serif;
+  color: white;
 }
 .container .card .imgBx img
 {
-  max-width: 70%;
+  width: 250px;
   border-radius: 4px;
 }
 .container .card .content
@@ -210,38 +261,108 @@ body {
 
 #wnews {
   border: 1px solid black;
+  border-radius: 10px;
   margin: 5px;
   padding: 15px;
   box-shadow: 5px 5px 5px #888888;
   width: 100%;
-  height: auto;
-  font-size: 20px;
-  -webkit-column-count: 2;
+  min-height: 700px;
+  font-size: 30px;
+  background: #f2ecde;
+  font-family: "Sofia", sans-serif;
+  color: #4c221b;
 }
 
-/*----musicconcert mnews----*/
+#wnews h2{
+  text-align: center;
+  font-family: "Sofia", sans-serif;
+}
+
+/*----musicconcert----*/
 
 #mnews {
-  border: 1px solid black;
-  margin: 5px;
+  border: 3px solid #4c221b;
+  border-radius: 10px;
+  margin: 20px auto;
   padding: 15px;
   box-shadow: 5px 5px 5px #888888;
-  width: 100%;
+  width: 80%;
   height: auto;
   font-size: 20px;
-  -webkit-column-count: 2;
+  background: #f2ecde;
 }
 
-/*---contact---*/
+#mnews img {
+  width: 100%;
+}
+
+@media (max-width: 650px) {
+  #mnews {
+    width: 100%;
+  }
+}
+
+
+/*---Join us---*/
+
+#newmember
+{
+  width: 60%;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px 15px;
+  border: 3px solid #4c221b;
+  border-radius: 10px;
+  text-align: center;
+  background: #f2ecde;
+
+}
+
+#newmember h2, #newmember p {
+  color: goldenrod;
+  font-family: "Sofia", sans-serif;
+  font-size: 50px;
+}
+
 
 #form {
-  border: 3px solid black;
+  border: 3px solid #4c221b;
   border-radius: 10px;
-  width: 500px;
+  width: 60%;
   margin: auto;
   margin-top: 90px;
+  background: #f2ecde;
+  font-size: 20px;
 }
 
+#formtag {
+  text-align: center;
+  padding: 10px 0;
+}
+
+#formtag h2 {
+  font-family: "Sofia", sans-serif;
+  font-size: 50px
+}
+
+#contactus {
+  width: 70%;
+  margin: 10px auto;
+}
+
+.infor {
+  width: 100%;
+  height: 30px;
+  border: 2px solid #4c221b;
+  border-radius: 5px;
+}
+
+.sbtn {
+  width: 100px;
+  height: 30px;
+  border: 2px solid #4c221b;
+  border-radius: 5px;
+}
 
 /*---shop---*/
 
@@ -259,15 +380,28 @@ body {
 .shopcontainer .card
 {
   position: relative;
-  width: 500px;
+  min-width: 300px;
   height: 400px;
-  background: #fff;
   margin: 50px 10px;
   padding: 20px 15px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 5px 202px rgba(0,0,0,0.5);
-  transition: 0.3s ease-in-out;
+  border: 3px solid #4c221b;
+  border-radius: 10px;
+  text-align: center;
+  background: #f2ecde;
+}
+
+.shopcontainer .card .content .content2
+{
+  position: absolute;
+  width: 90%;
+  bottom: 20px;
+}
+
+.shopimg {
+  height: auto;
+  margin : auto;
 }
 
 /*---entrance---*/
@@ -279,17 +413,18 @@ body {
   transform: translate(-50%, -50%);
   width: 400px;
   height: 400px;
-  background: grey;
+  /*background: #4c221b;*/
+  background-image: url(../img/button.png);
   border-radius: 50%;
 }
 
 
 #intro a {
-  font-size: 4em;
+  font-size: 65px;
   font-weight: bold;
   text-decoration: none;
   color: transparent;
-  letter-spacing:5px;
+  letter-spacing:4px;
      background-image: linear-gradient(
 	to right,
 	#462523 0,
@@ -300,7 +435,7 @@ body {
 	#cb9b51 78%,
 	#462523 100%
 	);
-  -webkit-background-clip:text;
+  -webkit-background-clip: text;
   font-family: "Sofia", sans-serif;
   position: absolute;
   top: 50%;
@@ -313,5 +448,7 @@ body {
 #welcomeMsg {
 	font-family: "Sofia", sans-serif;
 }
+
+
 
 

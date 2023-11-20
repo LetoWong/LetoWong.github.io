@@ -2,14 +2,15 @@
 
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Web Page</title>
+    <title>Events</title>
     <link rel="stylesheet" href="css\index.css" />
   </head>
 
   <body>
     
-    <div id="tpic">
-      <img src="#" alt="intro">
+    <div id="banner">
+      <img src="img\banner.jpg" alt="banner">
+      <p>Classical Online</p>
     </div>
 
     <div class="topnav">
@@ -20,29 +21,23 @@
           <li><a href="index.html">What's News</a></li>
           <li><a href="shop.html">Shop</a></li>
           <li><a href="main.html">Main</a></li>
-          <li><a href="musicconcert.html">Music Concert</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="musicconcert.html">Events</a></li>
+          <li><a href="contact.html">Join us</a></li>
         </ul>
       </nav>
     </div>
 
     <div id="mcontainer">
       <div id="mnews">
-        <h2>Con 1</h2>
-        con1
+        <img src="img\con1.jpg">
       </div>
       <div id="mnews">
-        <h2>Con 2</h2>
-        con2
+        <img src="img\con2.jpg">
       </div>
-      <div id="mnews">
-        <h2>Con 3</h2>
-        con3
-      </div>
-      <div id="mnews">
-        <h2>Con 4</h2>
-        con4
-      </div>
+    </div>
+
+    <div class="footer">
+      <h2><i><b>Copyright 2023 © ChenMingChoi & WongHoLung</b></i></h2>
     </div>
 
     <script>
@@ -52,11 +47,6 @@
         header.classList.toggle('active');
       }
 
-      function welcome() {
-        var nameInput = window.prompt("Hello, What's your name?", "Guest");
-        var message = nameInput + " Welcome!!";
-        welcomeMsg.innerHTML = message;
-      }
     </script>
   </body>
 

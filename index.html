@@ -2,14 +2,15 @@
 
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Web Page</title>
+    <title>Index</title>
     <link rel="stylesheet" href="css\index.css" />
   </head>
 
-  <body onload="welcome()">
+  <body>
     
-    <div id="tpic">
-      <img src="#" alt="intro">
+    <div id="banner">
+      <img src="img\banner.jpg" alt="banner">
+      <p>Classical Online</p>
     </div>
 
     <div class="topnav">
@@ -20,17 +21,23 @@
           <li><a href="index.html">What's News</a></li>
           <li><a href="shop.html">Shop</a></li>
           <li><a href="main.html">Main</a></li>
-          <li><a href="musicconcert.html">Music Concert</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="musicconcert.html">Events</a></li>
+          <li><a href="contact.html">Join us</a></li>
         </ul>
       </nav>
     </div>
 
     <div id="wcontainer">
       <div id="wnews">
-      	<p><h2 id="welcomeMsg"></h2></p>
-        The Hong Kong Tourism Board (HKTB) is a government-subvented body tasked to market and promote Hong Kong as a travel destination worldwide and to enhance visitors' experience once they arrive. You can find out more about our organisation, its structure, management and more, here. Stay in touch with all that is happening in Hong Kong and get great local insights by following us on social media, meeting the people who call the city home and, maybe, even by being our guests.
+      	<h2>What is Classical music</h2>
+        Classical music generally refers to the art music of the Western world, considered to be distinct from Western folk music or popular music traditions. It is sometimes distinguished as Western classical music, as the term "classical music" also applies to non-Western art music. Classical music is often characterized by formality and complexity in its musical form and harmonic organization,particularly with the use of polyphony.Since at least the ninth century it has been primarily a written tradition,spawning a sophisticated notational system, as well as accompanying literature in analytical, critical, historiographical, musicological and philosophical practices. A foundational component of Western culture, classical music is frequently seen from the perspective of individual or groups of composers, whose compositions, personalities and beliefs have fundamentally shaped its history.
+        <br><br>
+        <iframe allow="autoplay" width="560" height="315" src="https://www.youtube.com/embed/zCj1i7Hkki4?si=W7QWeYh5-hwdc0Ia" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen autoplay="1"></iframe>  
       </div>
+    </div>
+
+    <div class="footer">
+      <h2><i><b>Copyright 2023 © ChenMingChoi & WongHoLung</b></i></h2>
     </div>
 
     <script>
@@ -40,11 +47,6 @@
         header.classList.toggle('active');
       }
 
-      function welcome() {
-        var nameInput = window.prompt("Hello, What's your name?", "Guest");
-        var message = "Welcome to our website, " + nameInput;
-        welcomeMsg.innerHTML = message;
-      }
     </script>
   </body>
 

@@ -2,34 +2,41 @@
 
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Web Page</title>
+    <title>Join Us</title>
     <link rel="stylesheet" href="css\index.css" />
   </head>
 
   <body>
     
-    <div id="tpic">
-      <img src="#" alt="intro">
+    <div id="banner">
+      <img src="img\banner.jpg" alt="banner">
+      <p>Classical Online</p>
     </div>
 
     <div class="topnav">
-      <a href="#" class="logo">Contact</a>
+      <a href="#" class="logo">Join us</a>
       <div class="menuToggle"></div>
       <nav>
         <ul>
           <li><a href="index.html">What's News</a></li>
           <li><a href="shop.html">Shop</a></li>
           <li><a href="main.html">Main</a></li>
-          <li><a href="musicconcert.html">Music Concert</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="musicconcert.html">Events</a></li>
+          <li><a href="contact.html">Join us</a></li>
         </ul>
       </nav>
     </div>
 
-    <div id="cform">
+
+    <div id="newmember">
+      <h2>For New Members</h2><br>
+      <p>Have extra 15% discounts</p><br>
+      <p>Free Tickets</p><br>
+    </div>
+
     <div id="form" >
-      <div class="h-tag">
-      <h2>Contact Us</h2>
+      <div id="formtag">
+      <h2>Join Us</h2>
       </div>
       <!-- create account div -->
       <form action="#">
@@ -37,42 +44,49 @@
       <table cellspacing="5" align="center" cellpadding="8" border="0">
       <tr>
       <td align="left">Name :</td>
-      <td><input type="text" placeholder="Enter user here" id="t1" class="tb" /></td>
+      <td><input type="text" placeholder="Enter your name" class="infor" /></td>
       </tr>
       <tr>
       <td align="left">Gender :</td>
-      <td><input type="radio" name="gender"/>Male<input type="radio" name="gender"/>Female </td>
+      <td><input type="radio" name="gender" value="M" checked />Male <input type="radio" name="gender" value="F" />Female </td>
       </tr>
       <tr>
-      <td align="left">Email Adress* :</td>
-      <td><input type="text" placeholder="Enter Email ID here" id="t2" class="tb" required="required"/></td>
+      <td align="left">Email Address :</td>
+      <td><input type="email" placeholder="Enter Email address" class="infor" /></td>
+      </tr>
+      <tr>
+      <td align="left">Phone Number* :</td>
+      <td><input type="text" placeholder="Enter a tel-no with 8 digits" class="infor" pattern="^[0-9]{8}$" required/></td>
       </tr>
       <tr>
       <td align="left">Birthday:</td>
-      <td><input type="date"class="tb"/></td>
+      <td><input type="date" class="infor" required /></td>
       </tr>
       <tr>
       <td align="left">Username* :</td>
-      <td><input type="text" placeholder="Enter Username here" id="t3" class="tb" required="required"/></td>
+      <td><input type="text" placeholder="Enter Username" class="infor" required/></td>
       </tr>
       <tr>
       <td align="left">Password* :</td>
-      <td><input type="password" placeholder="Enter Password here" id="t4" class="tb" required="required"/></td>
+      <td><input type="text" placeholder="Enter 8 to 12 alphanumberic" class="infor" pattern="[A-Za-z0-9%]{8,12}" required/></td>
       </tr>
       <tr>
       <td align="left">Confirm Password* :</td>
-      <td><input type="password" placeholder="Enter Password here" id="t5" class="tb" required="required"/></td>
+      <td><input type="text" placeholder="Enter Password same as above" class="infor" pattern="[A-Za-z0-9%]{8,12}" required/></td>
       </tr>
       <tr>
       <td></td>
       <td>
-      <input type="reset" value="Clear Form" onclick="clearFunc()" id="res" class="btn" />
-      <input type="submit" value="Create Account" class="btn" onclick="registration()" /></td>
+      <input type="reset" value="Clear" class="sbtn"/>
+      <input type="submit" value="Create Account" class="sbtn" /></td>
       </tr>
       </table>
       </div>
       </form>
     </div>
+
+    <div class="footer">
+      <h2><i><b>Copyright 2023 © ChenMingChoi & WongHoLung</b></i></h2>
     </div>
 
     <script>
@@ -81,12 +95,7 @@
       menuToggle.onclick = function(){
         header.classList.toggle('active');
       }
-
-      function welcome() {
-        var nameInput = window.prompt("Hello, What's your name?", "Guest");
-        var message = nameInput + " Welcome!!";
-        welcomeMsg.innerHTML = message;
-      }
+	
     </script>
   </body>
 

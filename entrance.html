@@ -2,17 +2,24 @@
 
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Web Page</title>
+    <title>Entrance</title>
     <link rel="stylesheet" href="css\index.css" />
   </head>
 
-  <body>
+  <body onLoad="welcome()">
     
+    <img id="entranceimg" src="img\background.jpg">
     <div id="intro">
-      <a href="index.html" class="">Welcome</a>
+      <a href="index.html">Welcome<p align="center" id="welcomeMsg"></p></a>
     </div>
 
-
+   <script>
+      function welcome() {
+        var nameInput = window.prompt("Hello, What's your name?", "Guest");
+        welcomeMsg.innerHTML = nameInput;
+      }
+    </script>
+    
   </body>
 
 </html>
