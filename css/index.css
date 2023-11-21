@@ -413,11 +413,23 @@ body {
   transform: translate(-50%, -50%);
   width: 400px;
   height: 400px;
-  /*background: #4c221b;*/
   background-image: url(../img/button.png);
   border-radius: 50%;
+  cursor: pointer;
+  animation: pulse 1.5s infinite;
 }
 
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(255,202,170, 1);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 70px rgba(255,202,170, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(255,202,170, 0);
+  }
+}
 
 #intro a {
   font-size: 65px;
